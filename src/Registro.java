@@ -108,14 +108,13 @@ public class Registro {
 
 		}
 	    public void registrarse() {
-	    	Scanner p1=new Scanner(System.in);
+	    	
 	    	
 	    	System.out.println("Digite el nombre del Jugador 1" );  
-	    	jugador1 = p1.nextLine();
-
+	    	jugador1 = Lee.cadena();
 	    	System.out.println("Digite el nombre del jugar 2");
 
-	        jugador2=p1.nextLine();
+	        jugador2=Lee.cadena();
 	        
 	    }
 	    /**
@@ -124,9 +123,6 @@ public class Registro {
 	    public void menu() throws IOException {
 			int op;
 			do{
-				
-				
-				Scanner opc =new Scanner(System.in);
 				
 				System.out.println(" ___________________________________________________________");
 				System.out.println("|_________________________Bienvenido________________________|");
@@ -144,7 +140,7 @@ public class Registro {
 				System.out.println("|___________________________________________________________|");
 				System.out.print("Digite su opcion : ");
 				
-				op = opc.nextInt();
+				op = Lee.numeroE();
 				switch (op) {
 					case 1:
 						System.out.println("En desarrollo");
