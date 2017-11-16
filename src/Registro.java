@@ -132,20 +132,13 @@ public class Registro {
 	    	
 	    	
 	    	System.out.println("Digite el nombre del Jugador 1" );  
-	    	jugador1 = Lee.cadena();
+	    	setJugador1( jugador1 = Lee.cadena() );
 	    	System.out.println("Digite el nombre del jugar 2");
 
-	        jugador2=Lee.cadena();
+	        setJugador2( jugador2 = Lee.cadena() );
 	        
 	    }
-	    /**
-	     * Permite la lectura de los archivos con el nombre que el metodo recibe como
-	     * parametro tipo String
-	     * @param String dirRegistro
-	     * */
-	    public void registroNods() {
-	    	int r=0;
-	    }
+	    
 	    /**
 	     * Este metodo se encarga de el menu y el procedimiento general del proyecto.
 	     * */

@@ -26,9 +26,9 @@ public class NodoR {
 		this.jugador = jugador;
 	}
 	/**
-     * este metodo muestra lo que posee la clase
+     * Este metodo muestra los datos que posee el nodo
      */
     public void mostrar(){ 
-        System.out.println("Cedula "+this.puntuacion+"\n nombre "+this.jugador);
+        System.out.println("Jugador "+this.jugador+"\n Puntuacion "+this.puntuacion);
     }
 }
