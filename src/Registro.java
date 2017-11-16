@@ -5,8 +5,26 @@ public class Registro {
 	    public String jugador1;
 	    public int puntuacionP1;
 	    public int puntuacionP2;
-	    
-	    
+	    public String dirRegistro;
+	    /**\
+	     * Gettters y setters que se van a utilizar en la clase actual
+	     * parametros de los setters
+	     * @param String jugador2;
+	     * @param String jugador1;
+	     * @param int puntuacionP1;
+	     * @param int puntuacionP2;
+	     * @param String dirRegistro;
+	     * */
+		public String getDirRegistro() {
+			return dirRegistro;
+		}
+
+
+		public void setDirRegistro(String dirRegistro) {
+			this.dirRegistro = dirRegistro;
+		}
+
+
 		public String getJugador2() {
 			return jugador2;
 		}
@@ -107,6 +125,9 @@ public class Registro {
 
 
 		}
+	    /**
+	     * Este metodo permite el registro de los jugadores.
+	     * */
 	    public void registrarse() {
 	    	
 	    	
@@ -116,6 +137,14 @@ public class Registro {
 
 	        jugador2=Lee.cadena();
 	        
+	    }
+	    /**
+	     * Permite la lectura de los archivos con el nombre que el metodo recibe como
+	     * parametro tipo String
+	     * @param String dirRegistro
+	     * */
+	    public void registroNods() {
+	    	int r=0;
 	    }
 	    /**
 	     * Este metodo se encarga de el menu y el procedimiento general del proyecto.
